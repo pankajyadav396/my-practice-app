@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 
 const Navsec = () => {
@@ -21,10 +22,14 @@ const Navsec = () => {
                     <div className='flex justify-between align-center my-auto max-w-[1140px] w-full'>
                         <ul className={`${nav ? "open" : "not-open"
                             } flex justify-center align-center m-0 p-0 gap-4 mobileView`}>
-                            <li><a onClick={show} href="/" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>How It Works</a></li>
-                            <li><a onClick={show} href="/brand" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>For Brands</a></li>
-                            <li><a onClick={show} href="/about" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>About Us</a></li>
-                            <li><a onClick={show} href="/contact" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>Contact</a></li>
+                            <li>
+                                <Link onClick={show} href="/" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>How It Works</Link></li>
+                            <li>
+                                <Link onClick={show} href="/brand" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>For Brands</Link></li>
+                            <li>
+                                <Link onClick={show} href="/about" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>About Us</Link></li>
+                            <li>
+                                <Link onClick={show} href="/contact" className='home relative  after:absolute after:w-0 hover:after:w-full after:right-0 hover:after:left-0 after:bg-fuchsia-700 after:h-[2px] after:duration-300 after:bottom-0 color-white fs-sm fw-normal ff-outfit lh-24 text-decoration-none list-unstyled'>Contact</Link></li>
                         </ul>
                         <label className=' sm:hidden cursor-pointer' id='menu' onClick={show}>
                             {nav ? (

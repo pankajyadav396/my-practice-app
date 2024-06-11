@@ -1,5 +1,5 @@
 import React from 'react'
-import Navsec from '../components/Navsec'
+import Navsec from './Navsec'
 
 const Brands = () => {
     return (
