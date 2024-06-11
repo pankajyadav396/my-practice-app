@@ -88,7 +88,7 @@ export default () => {
             {Swipemap.map((obj, index) => {
               return (
                 <SwiperSlide>
-                  <div class="min-h-[470px] max-md:max-w-[500px]">
+                  <div class="min-h-[470px] h-full max-md:max-w-[500px]">
                     <div class="h-full border-2 border-blue-500 border-opacity-60 rounded-2xl">
                       <img src={obj.img} alt="image" className='w-full max-h-[220px] rounded-2xl' />
                       <div class="p-6">
@@ -116,6 +116,7 @@ export default () => {
         </div>
         <div className=' text-start w-full !mt-[100px]'>
           <a href="/about" className=' text-blue-500 text-2xl'> about</a>
+          <a href="/contact">contact</a>
         </div>
       </div >
     </div>
